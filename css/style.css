@@ -202,6 +202,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 62px;
 }
 
 
@@ -209,7 +210,7 @@ h1, h2, h3, h4 {
     text-decoration: none;    
     display: block;
     max-width: 387px;
-    color: #2E2F22;
+    color: #2E2F22;    
     transition: all 0.2s;
 }
 
@@ -243,8 +244,7 @@ h1, h2, h3, h4 {
 .small-item-theme, .small-item-date {
     font-size: 16px;
     line-height: 26px;
-    color: rgba(46, 47, 34, 0.7);
-    margin-bottom: 62px;
+    color: rgba(46, 47, 34, 0.7);    
 }
 
 .articles-big-list {
@@ -328,19 +328,90 @@ h1, h2, h3, h4 {
     background-color: #d7d1c9;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .articles-small-list,
     .articles-big-list {
+        column-gap: 20px;
         justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .articles-small-link {
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 576px) {
     .articles-header {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
     }
     .articles-big-list {
         margin-bottom: 0;
+    }
+}
+
+
+/* ======= about ========= */
+
+
+.about-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-title {
+    font-size: 36px;
+    line-height: 55px;
+    margin-bottom: 49px;
+}
+
+.about-block-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+.about-block-content-img {
+    max-width: 590px;
+}
+
+.about-block-content-img__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-block-text {
+    max-width: 590px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.about-block-text__text {
+    max-width: 497px;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px;    
+}
+
+.about-block-text__text>p {
+    margin-bottom: 30px;
+}
+
+.about-block-text__quote {
+    font-size: 30px;
+    line-height: 40px;
+    font-style: italic;
+    padding: 20px;
+    border-left: 3px solid #d7d1c9;
+}
+
+@media (max-width: 1200px) {
+    .about-block-content {
+        justify-content: center;
     }
 }
