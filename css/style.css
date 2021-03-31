@@ -9,6 +9,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: #2E2F22;
 }
 
 h1, h2, h3, h4 {
@@ -114,4 +115,232 @@ h1, h2, h3, h4 {
     }
 
     
+}
+
+
+/* ======= articles ======= */
+
+
+
+.articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 49px;
+    position: relative;
+}
+
+.articles-title {
+    font-size: 36px;
+    line-height: 55px;
+}
+
+.select-theme {
+    position: relative;
+}
+
+.select-theme-btn {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 20px;
+    padding-right: 74px;
+    background-color: #D7D1C9;
+    border-radius: 10px; 
+    cursor: pointer;
+    position: relative;   
+}
+
+.select-theme-btn::after {
+    content: "";
+    width: 22px;
+    height: 20px;
+    background-image: url(../img/Polygon.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 17px;
+    right: 19px;    
+}
+
+.select-theme-btn.active::after {
+    content: "";
+    width: 15px;
+    height: 14px;
+    background-image: url(../img/Polygon.svg);
+    position: absolute;
+    top: 17px;
+    right: 22px;
+    transform: rotate(-180deg);
+}
+
+.theme-list {
+    position: absolute;
+    list-style: none;
+    width: 202px;
+    padding: 20px;
+    background-color: #d7d1c9;
+    top: 35px;
+    right: 0;
+    border-radius: 10px;
+    display: none;
+}
+
+.theme-list.active {
+    display: block;
+    z-index: 2;
+}
+
+.theme-list-link {
+    text-decoration: none;
+    color: #2E2F22;
+}
+
+.theme-list-link:hover {
+    text-decoration: underline;
+}
+
+.articles-small-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.articles-small-link {
+    text-decoration: none;    
+    display: block;
+    max-width: 387px;
+    color: #2E2F22;
+    transition: all 0.2s;
+}
+
+.articles-small-link:hover {
+    transform: scale(1.05);
+}
+
+.articles-small-list-item__img {
+    width: 100%;
+    margin-bottom: 27px;
+    border-radius: 10px;
+}
+
+.articles-small-list-item__title {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 8px;
+}
+
+.articles-small-list-item__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.articles-small-list-item__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-item-theme, .small-item-date {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(46, 47, 34, 0.7);
+    margin-bottom: 62px;
+}
+
+.articles-big-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 84px;
+}
+
+.articles-big-link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    max-width: 590px;
+    margin-bottom: 20px;position: relative;
+    transition: all 0.2s;    
+}
+
+.articles-big-link:hover {
+    transform: scale(1.05);
+}
+
+.articles-big-list-item__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.articles-big-list-item-content {
+    position: absolute;
+    max-width: 429px;
+    left: 82px;
+    bottom: 61px;
+}
+
+.articles-big-list-item__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.articles-big-list-item__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.articles-big-list-item__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-item-theme, big-item-date {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.articles-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 85px;
+}
+
+.articles-btn {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 58px;
+    border: 1px solid #202117;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    max-width: 224px;    
+}
+
+.articles-btn:hover {
+    background-color: rgba(215, 209, 201, 0.4);
+}
+
+.articles-btn:active {
+    background-color: #d7d1c9;
+}
+
+@media (max-width: 992px) {
+    .articles-small-list,
+    .articles-big-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .articles-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .articles-big-list {
+        margin-bottom: 0;
+    }
 }

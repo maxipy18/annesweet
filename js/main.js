@@ -3,6 +3,8 @@ window.addEventListener('load', ()=>{
     const header = document.querySelector('.header');
     const burger = document.querySelector('.burger');
     const navList = document.querySelector('.nav-list');
+    const selectThemeBtn = document.querySelector('.select-theme-btn');
+    const themeList = document.querySelector('.theme-list');
     
 
     header.style.height = `${header.clientWidth*0.4}px`;
@@ -10,16 +12,8 @@ window.addEventListener('load', ()=>{
 
     const headerHeight = ()=>{  
         window.addEventListener('resize', ()=>{
-            header.style.height = `${header.clientWidth*0.4}px`;
-                                    
+            header.style.height = `${header.clientWidth*0.4}px`;                                    
         });
-    };
-
-    const headerImg = ()=> {
-        const titleName = document.querySelector('title').textContent;
-        if(titleName == 'Article'){
-            header.style.backgroundImage = `url(img/article-header-bg.jpg)`;
-        };        
     };
 
 
@@ -28,9 +22,14 @@ window.addEventListener('load', ()=>{
         burger.classList.toggle('active');
     });
 
+    selectThemeBtn.addEventListener('click', ()=>{
+        selectThemeBtn.classList.toggle('active');
+        themeList.classList.toggle('active');
+    })
 
 
-    headerImg();
+
+    
     headerHeight();
 });
 
