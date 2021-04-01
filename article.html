@@ -1,17 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
+    <title>Anne Sweet Article</title>
+    <link rel="shortcut icon" href="./img/a.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header class="header"></header>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img class="header-logo__img" src="./img/main-logo.svg" alt="логотип">
+                </div>
+                <nav class="nav-list">
+                    <a class="nav-item" href="index.html#articles">Статьи</a>
+                    <a class="nav-item" href="index.html#about">Обо мне</a>
+                    <a class="nav-item" href="index.html#portfolio">Портфолио</a>
+                    <a class="nav-item" href="index.html#write">Написать мне</a>
+                </nav>
+                <div class="burger"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="article">
+        <div class="container">
+            <article class="main-article">
+                <h2 class="article-title">
+                    Как себя мотивировать
+                </h2>
+                <div class="article-data">
+                    <span class="article-data-theme">
+                        Теги: путешествия, друзья
+                    </span>
+                    <span class="article-data-date">
+                        29.09.2020
+                    </span>
+                </div>
+                <p class="article-text">
+                    Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе
+                    мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам
+                    бороться с соблазнами» Ирины Якутенко.
+                </p>
+                <p class="article-text">
+                    Согласно этой теории, человеческое поведение контролируют две системы: BAS (Behavior Activation
+                    System) и BIS (Behavior Inhibition System), каждая из них обусловлена генетически. Грей использовал
+                    её для понимания того, как вознаграждение или наказание связаны с беспокойством и импульсивностью.
+                    Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно
+                    понять, какие стимулы использовать для эффективной мотивации.
+                </p>
+                <figure>
+                    <img class="article-img" src="./img/article-img.jpg" alt="">
+                    <figcaption>
+                        Моё поведение регулируется больше BAS, поэтому при планировании целей я всегда использую
+                        позитивный стимул.
+                    </figcaption>
+                </figure>
+                <p class="article-text">
+                    BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация людей, чье
+                    поведение в основном определяется этой системой, направлена на получение вознаграждения. Они
+                    стремятся получить одобрение и награду за свои действия. Такие люди более мотивированы в учебе и
+                    развитии разных навыков. Однако носители активной BAS склонны к импульсивности и желанию
+                    немедленного вознаграждения, что может мешать долгосрочной работе.
+                    BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой
+                    мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а
+                    также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.
+                </p>
+                <p class="article-text">
+                    Определив, к какому типу относится поведение, вы узнаете, какие стимулы использовать для достижения
+                    поставленной цели. Например, я решила выучить английский — само изучение не является целью, поэтому
+                    нужно правильно
+                    её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью
+                    какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я
+                    склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не
+                    потеряюсь в новой стране. И это можно использовать в различных сферах жизни.
+                </p>
+                <div class="article-footer">
+                    <div class="article-like">
+                        <img class="article-like-img" src="./img/like.svg" alt="">
+                        <span class="article-like-count">
+                            16
+                        </span>
+                    </div>
+                    <div class="article-social">
+                        <a class="article-social-link" href="#">
+                            <img class="article-social-link-img" src="./img/twitter.svg" alt="">
+                        </a>
+                        <a class="article-social-link" href="#">
+                            <img class="article-social-link-img" src="./img/facebook.svg" alt="">
+                        </a>
+                        <a class="article-social-link" href="#">
+                            <img class="article-social-link-img" src="./img/vk.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <a class="all-articles-link" href="index.html#articles">
+                <h2 class="all-articles-title">
+                    Ко всем статьям
+                </h2>
+                <img class="all-articles-link-img" src="./img/Arrow.svg" alt="">
+            </a>
+            <div class="comments">
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="comment-user-photo">
+                            <img class="comment-user-photo-img" src="./img/user-photo-1.png" alt="">                            
+                        </div>
+                        <span class="comment-user-name">
+                            Иван Петров
+                        </span>
+                    </div>
+                    <p class="comment-body">
+                        Отличная статья! Спасибо.
+                    </p>
+                </div>
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="comment-user-photo">
+                            <img class="comment-user-photo-img" src="./img/user-photo-2.png" alt="">                            
+                        </div>
+                        <span class="comment-user-name">
+                            Ксения Ксения
+                        </span>
+                    </div>
+                    <p class="comment-body">
+                        Отличный текст, добавила в закладки.
+                    </p>
+                </div>
+                <div class="comment">
+                    <div class="comment-header">
+                        <div class="comment-user-photo">
+                            <img class="comment-user-photo-img" src="./img/user-photo-3.png" alt="">                            
+                        </div>
+                        <span class="comment-user-name">
+                            Иван Иванов
+                        </span>
+                    </div>
+                    <p class="comment-body">
+                        Основательный материал! Можешь посоветовать какие-то книги на эту тему?
+                    </p>
+                </div>
+            </div>
+            <div class="post">
+                <h3 class="post-title">
+                    Оставить комментарий
+                </h3>
+                <form action="#" class="post-form">
+                    <div class="form-user-data">
+                        <input class="form-user-data-name" type="text" name="user-name" placeholder="Имя">
+                        <input class="form-user-data-email" type="email" name="user-email" placeholder="Почта">
+                        <button class="post-btn" type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                    <textarea class="post-textaria" name="comment" cols="30" rows="10" placeholder="Написать комментарий..."></textarea>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <a class="footer-link" href="#">ВК</a>
+                <a class="footer-link" href="#">Телеграм</a>
+                <a class="footer-link" href="#">Инстаграм</a>
+                <a class="footer-link" href="#">Твиттер</a>
+            </div>
+        </div>
+    </footer>
+
 
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>

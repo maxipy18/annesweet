@@ -17,6 +17,11 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 36px;
+    line-height: 55px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -128,11 +133,6 @@ h1, h2, h3, h4 {
     align-items: center;
     margin-bottom: 49px;
     position: relative;
-}
-
-.articles-title {
-    font-size: 36px;
-    line-height: 55px;
 }
 
 .select-theme {
@@ -362,9 +362,7 @@ h1, h2, h3, h4 {
     flex-direction: column;
 }
 
-.about-title {
-    font-size: 36px;
-    line-height: 55px;
+.about-title {    
     margin-bottom: 49px;
 }
 
@@ -434,9 +432,7 @@ h1, h2, h3, h4 {
     margin-bottom: 87px;
 }
 
-.portfolio-title {
-    font-size: 36px;
-    line-height: 55px;
+.portfolio-title {    
     margin-bottom: 49px;
 }
 
@@ -542,9 +538,7 @@ h1, h2, h3, h4 {
     margin-bottom: 81px;
 }
 
-.write-title {
-    font-size: 36px;
-    line-height: 55px;
+.write-title {   
     margin-bottom: 47px;
 }
 
@@ -661,4 +655,218 @@ h1, h2, h3, h4 {
 
 .footer-link:hover {
     text-decoration: underline;
+}
+
+
+
+/* ======== article ======== */
+
+.main-article {
+    max-width: 991px;
+    margin-bottom: 37px;
+}
+
+.article-title {
+    margin-bottom: 8px;
+}
+
+.article-data {
+    display: flex;
+    column-gap: 18px;
+    margin-bottom: 50px;
+}
+
+.article-data-theme,
+.article-data-date {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(46, 47, 34, 0.7);
+}
+
+.article-text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 37px;
+}
+
+figure {
+    margin-bottom: 37px;
+}
+
+.article-img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.article-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-like-img,
+.article-social-link-img {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.article-like-img:hover,
+.article-social-link-img:hover {
+    opacity: 1;
+}
+
+.article-like-count {
+    font-size: 24px;
+    line-height: 26px;
+    margin-left: 14px;
+}
+
+.article-social {
+    display: flex;
+    column-gap: 32px;
+}
+
+.article-social-link-img {
+    cursor: pointer;
+}
+
+.all-articles-link {
+    text-decoration: none;
+    color: #2E2F22;
+    display: flex;    
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.all-articles-link:hover {
+    text-decoration: underline;
+}
+
+.all-articles-title {
+    line-height: 50px;
+    margin-right: 26px;
+}
+
+.comments {
+    max-width: 793px;
+    padding: 30px 90px;   
+    background-color: #ECE1E1;
+    border-radius: 10px;
+    margin-bottom: 77px;
+}
+
+.comment {
+    margin-bottom: 30px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.comment-user-photo {
+    width: 50px;
+    margin-right: 11px;
+}
+
+.comment-user-photo-img {
+    width: 100%;
+}
+
+.comment-user-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.comment-body {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.post {
+    margin-bottom: 81px;
+}
+
+.post-title {
+    margin-bottom: 69px;
+    margin-left: 84px;
+}
+
+.post-form {
+    max-width: 793px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-user-data {
+    padding: 0 84px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.form-user-data-name,
+.form-user-data-email {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #2E2F22;
+}
+
+.form-user-data-email {
+    margin-bottom: 53px;
+}
+
+.post-btn {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 12px 58px;
+    border: 1px solid #202117;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    max-width: 245px;    
+}
+
+.post-btn:hover {
+    background-color: rgba(215, 209, 201, 0.4);
+}
+
+.post-btn:active {
+    background-color: #d7d1c9;
+}
+
+.post-textaria {
+    width: 50%;
+    border-radius: 10px;
+    resize: none;
+    padding-top: 18px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media (max-width: 768px) {
+    .post-form {
+        padding: 0 5px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .form-user-data {
+        width: 100%;
+        padding: 10px 30px;        
+    }
+    .post-textaria {
+        width: 100%;
+    }
 }
