@@ -456,6 +456,11 @@ h1, h2, h3, h4 {
     max-width: 387px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
     position: relative;
+    transition: all 0.2s;
+}
+
+.portfolio-link:hover {
+    transform: scale(1.05);
 }
 
 .portfolio-link:nth-child(2) {
@@ -481,6 +486,7 @@ h1, h2, h3, h4 {
 .portfolio-link-theme-title {
     font-size: 18px;
     line-height: 28px;
+    padding: 0 20px;
     margin-bottom: 17px;
 }
 
