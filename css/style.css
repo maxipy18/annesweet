@@ -634,3 +634,31 @@ h1, h2, h3, h4 {
         width: 100%;
     }
 }
+
+
+/* ======= footer ======= */
+
+
+.footer {
+    padding-top: 65px;
+    padding-bottom: 91px;
+    background-color: #D7D1C9;
+}
+
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2E2F22;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
