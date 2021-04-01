@@ -403,6 +403,10 @@ h1, h2, h3, h4 {
     margin-bottom: 30px;
 }
 
+.about-block-text__text a {
+    color: #2E2F22;
+}
+
 .about-block-text__quote {
     font-size: 30px;
     line-height: 40px;
